@@ -1,0 +1,54 @@
+!!com.snobot.simulator.config.SimulatorConfig
+mAccelerometers: []
+mAnalogIO:
+- mHandle: 0
+  mName: Analog 0
+mDefaultI2CWrappers:
+  0: null
+  1: null
+mDefaultSpiWrappers:
+  0: NavX
+  1: NavX
+  2: null
+  3: NavX
+  4: NavX
+mDigitalIO:
+- mHandle: 0
+  mName: Digital Source0
+- mHandle: 1
+  mName: Digital Source1
+- mHandle: 2
+  mName: Digital Source2
+- mHandle: 3
+  mName: Digital Source3
+mEncoders:
+- mConnectedSpeedControllerHandle: 0
+  mHandle: 0
+  mName: Encoder 0
+- mConnectedSpeedControllerHandle: 1
+  mHandle: 1
+  mName: Encoder 1
+mGyros:
+- mHandle: 0
+  mName: Analog Gyro
+mPwm:
+- mHandle: 0
+  mMotorModelConfig: null
+  mMotorSimConfig: !!com.snobot.simulator.motor_sim.SimpleMotorSimulationConfig
+    mMaxSpeed: 0.0
+  mName: Speed Controller 0
+- mHandle: 1
+  mMotorModelConfig: null
+  mMotorSimConfig: !!com.snobot.simulator.motor_sim.SimpleMotorSimulationConfig
+    mMaxSpeed: 0.0
+  mName: Speed Controller 1
+mRelays: []
+mSimulatorComponents:
+- !!com.snobot.simulator.simulator_components.TankDriveGyroSimulator$TankDriveConfig
+  mGyroHandle: 0
+  mLeftEncoderHandle: 0
+  mRightEncoderHandle: 0
+  mTurnKp: 1.0
+mSolenoids:
+- mHandle: 0
+  mName: Solenoid 0
